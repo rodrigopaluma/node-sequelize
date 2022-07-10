@@ -17,7 +17,6 @@ h2 {
     color: #5a5a5a;
     font-size: 2em;
     font-weight: bold;
-    
 }
 
 p {
@@ -25,9 +24,17 @@ p {
     font-size: 14px;
 }
 
-.form, .books-container {
+.form, .books-container, .address-container {
     width: 450px;
     margin: 0 auto;
+}
+
+.address-container {
+    margin-top: 1em;
+}
+
+.height {
+    margin-top: 15px;
 }
 
 .form-control {

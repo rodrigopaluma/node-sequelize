@@ -19,3 +19,28 @@
     </div>
     <input type="submit" value="Editar">
 </form>
+<div class="address-container">
+    <h2>Endereços do Usuário:</h2>
+    <div class="address-list">
+        {{#each user.Addresses}}
+        <p>#{{this.id}} - {{this.street}} - {{this.number}} - {{this.city}}</p>
+        {{/each}}
+    </div>
+    <h2 class="height">Novo Endereço:</h2>
+    <form action="/address/create" method="POST">
+        <input type="hidden" name="UserId" value="{{user.id}}">
+        <div class="form-control">
+            <label for="street">Rua:</label>
+            <input type="text" name="street" placeholder="Digite o nome da rua" value="{{address.street}}">
+        </div>
+        <div class="form-control">
+            <label for="number">Número:</label>
+            <input type="text" name="number" placeholder="Digite o número" value="{{address.number}}">
+        </div>
+        <div class="form-control">
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" placeholder="Nome da Cidade" value="{{address.city}}">
+        </div>
+        <input type="submit" value="Incluir Endereço">
+    </form>
+</div>
