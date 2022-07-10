@@ -112,3 +112,26 @@ p {
     display: flex;
     justify-content: end;
 }
+
+.actions a,
+.actions input {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #003865;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.actions .details-btn {
+    border-color: #003865;
+    color: #003865;
+}
+
+.actions .delete-btn {
+    border-color: #cc0000;
+    color: #cc0000;
+}
