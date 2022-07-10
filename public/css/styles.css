@@ -86,16 +86,6 @@ p {
     text-align: center;
 }
 
-.actions {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-}
-
-.actions a {
-    margin-left: 1em;
-}
-
 /* Users */
 .container {
     display: flex;
@@ -111,5 +101,14 @@ p {
     padding: 20px;
     flex: 1 1 29%;
     max-width: 29%;
-    height: 75px;
+    height: 100px;
+}
+
+.item h2, .item p {
+    margin-bottom: 0.3em;
+}
+
+.actions {
+    display: flex;
+    justify-content: end;
 }
