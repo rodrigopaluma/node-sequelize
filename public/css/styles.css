@@ -33,6 +33,30 @@ p {
     margin-top: 1em;
 }
 
+.address-list {
+    display: flex;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .3em;
+}
+
+.delete-address-btn {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 4px 6px;
+    color: red;
+    background: #fff;
+    align-self: end;
+}
+
 .height {
     margin-top: 15px;
 }

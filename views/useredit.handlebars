@@ -20,12 +20,24 @@
     <input type="submit" value="Editar">
 </form>
 <div class="address-container">
+    <!--Lista de Endereços-->
     <h2>Endereços do Usuário:</h2>
     <div class="address-list">
         {{#each user.Addresses}}
-        <p>#{{this.id}} - {{this.street}} - {{this.number}} - {{this.city}}</p>
+            <div class="endereco">
+                #{{this.id}} - 
+                {{this.street}} - 
+                {{this.number}} - 
+                {{this.city}}
+                <form action="/address/delete" method="POST">
+                    <input type="hidden" name="UserId" value="{{this.UserId}}">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <input type="submit" value="Excluir" class="delete-address-btn">
+                </form>
+            </div>
         {{/each}}
     </div>
+    <!--Cadastro de Endereço-->
     <h2 class="height">Novo Endereço:</h2>
     <form action="/address/create" method="POST">
         <input type="hidden" name="UserId" value="{{user.id}}">
